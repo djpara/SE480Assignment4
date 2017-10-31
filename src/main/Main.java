@@ -1,6 +1,6 @@
 package main;
 
-import algorithms.Stemmer;
+import filters.Stemmer;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
