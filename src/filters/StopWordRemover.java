@@ -16,6 +16,6 @@ public class StopWordRemover {
 				words.remove(word);
 			}
 		}
-		WordCounter.printTopTen(words);
+		WordCounter.countWordsPushPrint(words);
 	}
 }

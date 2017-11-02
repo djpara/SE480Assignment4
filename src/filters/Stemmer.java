@@ -75,6 +75,32 @@ public class Stemmer {
 	
 	private void startStemming(String[] args) {
 		
+		for (String arg : args) {
+			
+			char[] w = arg.toCharArray();
+			Stemmer s = new Stemmer();
+			
+			for (int i = 0; i < arg.length(); ++i) {
+				int ch = Character.toLowerCase(w[i]);
+				if (Character.isLetter(ch)) {
+					int j = 0;
+					if (i > 0) {
+						w[j] = (char) ch;
+						if (j < 500) {
+							j++;
+						}
+						if (i < arg.length()) {
+							ch =
+						}
+					}
+					
+				}
+				
+				
+			}
+			
+		}
+		
 		char[] w = new char[1024];
 		Stemmer s = new Stemmer();
 		for (int i = 0; i < args.length; i++) {
@@ -87,6 +113,7 @@ public class Stemmer {
 							int j = 0;
 							while(true) {  
 								ch = Character.toLowerCase((char) ch);
+								//
 								w[j] = (char) ch;
 								if (j < 500) 
 									j++;

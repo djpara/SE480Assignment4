@@ -17,7 +17,7 @@ public class NonAlphaRemover {
 			nonAlphaLines.add(nonAlphaLine);
 		}
 		
-		SentenceSplitter.splitPush(nonAlphaLines);
+		SentenceSplitter.splitPushStemmer(nonAlphaLines);
 	}
 	
 	public String removeNonAlpha(String line) {

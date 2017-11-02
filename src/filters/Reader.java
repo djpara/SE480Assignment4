@@ -11,7 +11,7 @@ public class Reader {
 	
 	public Reader() { }
 
-	public void readFilePush (String textFile) {
+	public void readFilePushNonAlphaRemover(String textFile) {
 		// Pipes the line read by buffered reader to the non-alpha remover
 		sendToNonAlphaRemover(read(textFile));
 	}
